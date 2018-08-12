@@ -1,0 +1,4 @@
+{    
+    "ezb_db":"https://ezb_db.fqdn:8443/",
+    "ezb_srv":"http://esb_srv.fqdn:5100/"
+}
