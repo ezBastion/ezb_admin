@@ -239,35 +239,35 @@
 
                                 </uib-tab>
                                 <uib-tab heading="ACCESS">
-                                    <!-- <form class="form-inline ng-pristine ng-valid" role="form" novalidate data-ng-submit="deprecated()">
+                                    <form class="form-horizontal ng-pristine ng-valid" role="form" novalidate data-ng-submit="deprecated()">
                                         <div class="form-group ">
-                                                <h4>supersede this API by:</h4>
-                                            <label for="deprecated " class="col-sm-4 control-label">
-                                                new api number or 0 if not deprecated
+                                        <div class="col-xs-1">
+                                            <label class="ui-switch ui-switch-success  ui-switch-sm">
+                                                <input type="checkbox" ng-checked="branch.data.polling" ng-model="branch.data.polling">
+                                                <i></i>
                                             </label>
-                                            <div class="col-sm-8">
-                                                <input type="number" class="form-control input-primary" id="deprecated" min="1" ng-model="branch.data.deprecated">
                                             </div>
+                                            <span  >Asynchronous polling</span>
                                         </div>
-                                        <div class="divider divider-dashed divider-lg pull-in "></div>
                                         <div class="form-group">
-                                                <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Anonymous API <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h4>
-                                            <label for="" class="col-sm-4 control-label">No Token required to use it.</label>
-                                            <div class="col-sm-8">
-                                                <label class="ui-switch ui-switch-success  ui-switch-lg">
-                                                    <input type="checkbox" ng-checked="branch.data.anonymous" ng-model="branch.data.anonymous">
-                                                    <i></i>
-                                                </label>
+                                        <div class="col-xs-1">
+                                            <label ng-if="canDisable" class="ui-switch ui-switch-success  ui-switch-sm">
+                                                <input type="checkbox" ng-checked="branch.data.anonymous" ng-model="branch.data.anonymous">
+                                                <i></i>
+                                            </label>
                                             </div>
+                                            <span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Anonymous API </span>
                                         </div>
                                         <div class="divider "></div>
                                         <button type="submit" class="btn btn-success  btn-xs">Save</button>
-                                    </form> -->
+                                    </form> 
+                                    <!--
                                     <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Anonymous API <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h4>
                                     <label ng-if="canDisable" class="ui-switch ui-switch-success ui-switch-sm">
                                     <input type="checkbox" ng-checked="branch.data.anonymous" ng-model="branch.data.anonymous" ng-click="anonymousBranch(branch)">
                                     <i></i>
                                     </label>
+                                    -->
                                 </uib-tab>
                                 <uib-tab heading="PATH &amp; QUERY">
 
